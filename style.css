@@ -1,0 +1,104 @@
+/* Element selector */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+/* Element selector */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* ID selector */
+#task-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    padding: 15px;
+    margin-bottom: 25px;
+
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+
+/* Multiple element selector */
+input,
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+
+/* Element selector */
+button {
+    padding: 8px 12px;
+    border: 1px solid #333;
+    background-color: #333;
+    color: white;
+}
+
+
+/* Pseudo-class */
+button:hover {
+    background-color: #555;
+}
+
+
+/* Class selector */
+.task {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    margin-bottom: 10px;
+    padding: 12px;
+
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+
+/* Let the task text use the remaining space */
+.task-info {
+    flex: 1;
+}
+
+
+/* Class selector */
+.task-name {
+    font-weight: bold;
+}
+
+
+/* Priority styles */
+.low {
+    color: green;
+}
+
+.medium {
+    color: orange;
+}
+
+.high {
+    color: red;
+}
+
+
+/* Completed task */
+.completed {
+    background-color: #e0e0e0;
+    color: #777;
+}
+
+.completed .task-name {
+    text-decoration: line-through;
+}
