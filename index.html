@@ -1,13 +1,64 @@
-<h1>My Task List</h1>
-<form id="task-form">
-    <label for="task-input">Task:</label>
-    <input id="task-input" type="text">
-    <label for="priority">Priority:</label>
-    <select id="priority">
-        <option value="low">Low</option>
-        <option value="medium">Medium</option>
-        <option value="high">High</option>
-    </select>
-    <button type="submit">Add Task</button>
-</form>
-<div id="task-list"></div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Use UTF-8 so the page can display English, Chinese, and other characters correctly -->
+    <meta charset="UTF-8">
+
+    <!-- Make the page scale properly on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The title shown on the browser tab -->
+    <title>My Task List</title>
+
+    <!-- Connect this HTML page to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main heading of the application -->
+    <h1>My Task List</h1>
+
+    <!--
+        This form allows the user to:
+        1. Enter a task name
+        2. Select a priority
+        3. Submit the new task
+    -->
+    <form id="task-form">
+
+        <!-- Label and text input for the task name -->
+        <label for="task-input">Task:</label>
+        <input
+            id="task-input"
+            type="text"
+            placeholder="Enter a task"
+        >
+
+        <!-- Label and dropdown menu for task priority -->
+        <label for="priority">Priority:</label>
+
+        <select id="priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+
+        <!-- Submitting this button will trigger the form's submit event -->
+        <button type="submit">Add Task</button>
+
+    </form>
+
+    <!--
+        JavaScript will dynamically add task elements
+        inside this container later.
+    -->
+    <div id="task-list"></div>
+
+    <!-- Connect this HTML page to the external JavaScript file -->
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
